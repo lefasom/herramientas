@@ -20,7 +20,7 @@ export default function Menu_1() {
     }
     let mensaje = "Hola, quiero hablar contigo";
     mensaje = mensaje.replace(/ /g, '%20');
-    const url = `https://api.whatsapp.com/send?phone=2616115057&text=${mensaje}`
+    const url = `https://api.whatsapp.com/send?phone=2616615057&text=${mensaje}`
     return (<>{states ?
         <div className={Styles.container_menu_1}>
             <button onClick={menu}>m</button>
