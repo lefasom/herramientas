@@ -19,9 +19,12 @@ export default function Menu_1() {
 
     }
     let mensaje = "Hola alberto, mi pedido:\npapa 2k\nzanahoria 2k\nhuevos x6";
+    var imagenURL = "https://tse1.mm.bing.net/th?id=OIP.A0MMBdQp2LPP_jomgdQZvwHaJB&pid=Api&rs=1&c=1&qlt=95&w=78&h=95"; // Reemplaza con la URL real de tu imagen
 
+    // Reemplaza espacios en blanco en la URL de la imagen
+    imagenURL = imagenURL.replace(/ /g, '%20');
     mensaje = mensaje.replace(/\n/g, '%0A');
-    const url = `https://api.whatsapp.com/send?phone=2616615057&text=${mensaje}`
+    const url = "https://api.whatsapp.com/send?phone=2616115057&text=" + mensaje + "%0A" + imagenURL;
     return (<>{states ?
 
         <div className={Styles.container_menu_1}>
