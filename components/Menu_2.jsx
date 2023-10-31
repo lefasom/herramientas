@@ -23,8 +23,11 @@ export default function Menu_1() {
     mensaje = mensaje.replace(/\n/g, '%0A');
     const url = `https://api.whatsapp.com/send?phone=2616615057&text=${mensaje}`
     return (<>{states ?
+
         <div className={Styles.container_menu_1}>
             <button onClick={menu}>m</button>
+        <a href={url}>whatsapp</a>
+
             <ul>
                 <li className={Styles.li}>
                     <span>1</span></li>
@@ -72,7 +75,6 @@ export default function Menu_1() {
 
             <ul>
                 <li className={Styles.li}>
-                <a href={url}>whatsapp</a>
 
                     Numeros<span>1</span></li>
                 <li onClick={changeList} className={Styles.li}>
