@@ -18,8 +18,7 @@ export default function Menu_1() {
         setlist2(false)
 
     }
-    useEffect(() => {
-    }, [])
+
     return (<>{states ?//  Abierto
         <div className={Styles.container_menu_1}>
             <button onClick={menu}>///</button>
