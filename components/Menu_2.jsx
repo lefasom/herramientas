@@ -24,7 +24,7 @@ export default function Menu_1() {
     // Reemplaza espacios en blanco en la URL de la imagen
     imagenURL = imagenURL.replace(/ /g, '%20');
     mensaje = mensaje.replace(/\n/g, '%0A');
-    const url = "https://api.whatsapp.com/send?phone=2616115057&text=" + mensaje + "%0A" + imagenURL;
+    const url = "https://api.whatsapp.com/send?phone=2616615057&text=" + mensaje + "%0A" + imagenURL;
     return (<>{states ?
 
         <div className={Styles.container_menu_1}>
