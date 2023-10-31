@@ -1,0 +1,113 @@
+.container {
+    display: flex;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container_chatBot,
+.container_chatBot_closed {
+    display: inline;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 7px 1px rgb(157, 201, 177);
+
+    overflow: hidden;
+    transition: all .4s;
+}
+
+.container_chatBot {
+    position: absolute;
+    /*  acorde a la posicion en .container_chatBot_closed */
+    bottom: 10px;
+    right: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+.container_chatBot_closed {
+    position: absolute;
+    /*  acorde a la posicion en .container_chatBot */
+    bottom: 10px;
+    right: 10px;
+    width: 30px;
+    height: 32px;
+
+}
+
+.container_chatBot button,
+.container_chatBot_closed button {
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 32px;
+    width: 30px;
+    font-size: 25px;
+    font-weight: 500;
+    border: 0;
+    color: #fff;
+    box-shadow: 1px 1px 7px 1px rgb(157, 201, 177);
+
+    background-color: rgb(157, 201, 177);
+
+}
+
+.container_chatBot h4,
+.container_chatBot_closed h4 {
+    color: rgb(157, 201, 177);
+
+    text-align: center;
+    padding: 6px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family: 'roboto';
+}
+
+.container_chatBot input,
+.container_chatBot_closed input {
+    width: 196px;
+    position: absolute;
+    background-color: rgba(234, 234, 234, 0.263);
+    padding: 7px;
+    font-weight: 400;
+    font-family: 'roboto';
+    bottom: 0px;
+    margin: 2px;
+    padding-right: 30px;
+    border: 1px solid #777;
+    outline-color: #777;
+}
+
+.container_chatBot .send {
+
+    height: 32px;
+    width: 32px;
+    padding-bottom: 2px;
+    position: relative;
+ top: 136px;
+    right: -167px;   
+     background-color: rgb(157, 201, 177);
+
+
+    color: #ffffff;
+    box-shadow: none;
+}
+
+.container_chatBot button:hover {
+    background-color: rgb(67, 163, 128);
+
+
+    color: #ffffff;
+}
+
+.container_chatBot_closed button:hover {
+    background-color: rgb(93, 152, 131);
+
+    color: #ffffff;
+}
+
+.container_chatBot_closed .send,
+.container_chatBot_closed input {
+    display: none;
+}

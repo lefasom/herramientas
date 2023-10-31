@@ -1,0 +1,131 @@
+.container_menu_1,
+.container_menu_2 {
+    user-select: none;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-color: #111;
+    color: #fff;
+    transition: all .2s;
+
+}
+
+.container_menu_1 {
+    width: 40px;
+}
+
+.container_menu_2 {
+    width: 120px;
+}
+
+.container_menu_1 span,
+.container_menu_2 span {
+    font-size: 22px;
+    padding: 5px;
+    padding-right: 12px;
+}
+.container_menu_1 span:hover{
+    color: #ccc;
+}
+
+.container_menu_1 .li,
+.container_menu_2 .li {
+    list-style: none;
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.container_menu_2 button,
+.container_menu_1 button {
+    font-size: 22px;
+    padding: 10px 5px;
+    padding-right: 12px;
+    background-color: transparent;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+}
+
+.container_menu_1 .sub_none {
+    display: block;
+    height: 0;
+    top: 0;
+    left: 9px;
+    transition: all .4s;
+    overflow: hidden;
+    margin-left: 20px;
+    position: absolute;
+    background-color: #111;
+    z-index: 9999999;
+}
+
+.container_menu_1 .sub_none li {
+    width: 100%;
+    padding: 5px;
+
+}
+
+.container_menu_1 .sub_none li:hover {
+    background-color: #888;
+    width: 100%;
+    padding: 5px;
+
+}
+
+.container_menu_1 li:hover .sub_none {
+    height: 115px;
+    margin-left: 20px;
+    overflow: hidden;
+    position: absolute;
+    transition: all .4s;
+}
+
+/* /////////////////////////////////// */
+
+.container_menu_2 .sub_block li {
+    width: 100%;
+    padding: 5px;
+}
+
+.container_menu_2 .sub_none li {
+    display: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.container_menu_2 .sub_block li:hover {
+    background-color: #111;
+}
+
+.container_menu_2 .sub_none li:hover {
+    background-color: #111;
+}
+
+.container_menu_2 .sub_none {
+    height: 0;
+    top: 0;
+    left: 0px;
+    position: relative;
+    margin-left: 20px;
+    background-color: #888;
+    overflow: hidden;
+    transition: all .4s;
+}
+
+.container_menu_2 .sub_block {
+    height: 115px;
+    top: 0;
+    left: 0px;
+    position: relative;
+    margin-left: 20px;
+    background-color: #555;
+    overflow: hidden;
+    transition: all .4s;
+}
