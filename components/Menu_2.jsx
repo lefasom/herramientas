@@ -19,7 +19,7 @@ export default function Menu_1() {
 
     }
 
-    return (<>{states ?//  Abierto
+    return (<>{states ?
         <div className={Styles.container_menu_1}>
             <button onClick={menu}>///</button>
             <ul>
@@ -58,7 +58,7 @@ export default function Menu_1() {
                     <span>5</span></li>
             </ul>
         </div>
-        :// cerrado
+        :
         <div className={Styles.container_menu_2}>
             <button onClick={() => {
                 menu()
