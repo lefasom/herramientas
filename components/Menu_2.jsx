@@ -21,7 +21,7 @@ export default function Menu_1() {
 
     return (<>{states ?
         <div className={Styles.container_menu_1}>
-            <button onClick={menu}>///</button>
+            <button onClick={menu}>m</button>
             <ul>
                 <li className={Styles.li}>
                     <span>1</span></li>
@@ -65,7 +65,7 @@ export default function Menu_1() {
                 setlist2(false)
                 setlist(false)
 
-            }}>///</button>
+            }}>m</button>
 
             <ul>
                 <li className={Styles.li}>
