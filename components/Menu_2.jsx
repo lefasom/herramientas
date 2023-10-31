@@ -18,7 +18,8 @@ export default function Menu_1() {
         setlist2(false)
 
     }
-    let mensaje = "Hola, quiero hablar contigo";
+    let mensaje = "Hola alberto, mi pedido:\npapa 2k\nzanahoria 2k\nhuevos x6";
+
     mensaje = mensaje.replace(/ /g, '%20');
     const url = `https://api.whatsapp.com/send?phone=2616615057&text=${mensaje}`
     return (<>{states ?
